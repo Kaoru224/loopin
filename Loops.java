@@ -1,22 +1,33 @@
 public class Loops {
 	public static void main(String[] args) {
 		
+			int effectivenessLost = 4;
+			int effectivenessThreshold = 50;
 
+			potency(effectivenessLost,effectivenessThreshold);
 
-
-		// int counter = 1;
-
-		// while (counter <= 100) {
-		// 	System.out.println(counter);
-		// 	counter++;
-		// }
-
-
-		for (int i=1; i <= 100; i++) {
-			System.out.println(i);
 		}
 
 
+		public static void potency(int lost, int threshold) {
+			int month = 0;
+				
+			double percent = 100.0;
 
-	}
+			double finalLost = 0;
+
+
+
+			while (percent > threshold) {
+				
+				System.out.println("Month: " + month + "    " + "Effectiveness: " + percent);
+				month++;
+				finalLost = percent*.04;
+				percent-=finalLost;
+
+			}
+				System.out.println("Month: " + month + "    " + "Effectiveness: " + percent + " DISCARDED" );
+
+
+		}
 }
