@@ -1,5 +1,17 @@
 public class Loops {
 	public static void main(String[] args) {
-		System.out.println("Loopin");
+		
+
+
+
+		int counter = 1;
+
+		while (counter <= 100) {
+			System.out.println(counter);
+			counter++;
+		}
+
+
+
 	}
 }
